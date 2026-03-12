@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilmajaam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Ilmajaam</h1>
+        <p class="subtitle">Praegune ilm ja 3 päeva prognoos</p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Praegu</h2>
+          <button id="refreshButton" type="button">Uuenda</button>
+        </div>
+        <p id="status" class="status">Asukoha küsimine...</p>
+        <div id="currentWeather" class="current hidden" aria-live="polite"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Järgmised päevad</h2>
+        <div id="forecast" class="forecast"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
